@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" type="text/css" href="./css/formulario.css">
+                       <title>Formulario de reserva de habitaciones</title>
+</head>
+
+<body>
+    <form class="contact-form" action="" method="" oninput="range_control_value.value = range_control.valueAsNumber">
+    <div class="contact_form">
+        <h1><u>Formulario de reserva de habitaciones (Hotel El Casarito)</u></h1>        
+            <img class="header" style="border-radius: 10px;" alt="URJC" src="https://r-cf.bstatic.com/images/hotel/max300/969/96921934.jpg">
+    <div class="formulario">
+        <h2>Completa los datos:</h2><br>
+            <form action="submit" method="post">
+
+<p>
+    <label class="enunciados"><b>Nombre y apellidos:</b></label>
+        <input type="text" required="obligatorio" placeholder="Escribir tu nombre"
+               style="box-shadow:  0 -3em 4em rgba(0,0,0,0.1),
+                                   0 0 0 1px rgb(255,255,255),
+                                   0.4em 0.4em 0.4em rgba(0,0,0,0.3);">
+</p>
+
+<p>
+    <label class="enunciados"><b>Email:</b></label>
+        <input type="text" required="obligatorio" placeholder="Escribir tu email"
+               style="box-shadow:  0 -3em 4em rgba(0,0,0,0.1),
+                                   0 0 0 1px rgb(255,255,255),
+                                   0.4em 0.4em 0.4em rgba(0,0,0,0.3);">
+</p>
+
+<p>
+    <label class="enunciados"><b>Fecha de nacimiento:</b></label>
+        <input type="date" required="obligatorio" placeholder="Escribir tu fecha"
+               style="box-shadow:  0 -3em 4em rgba(0,0,0,0.1),
+                                   0 0 0 1px rgb(255,255,255),
+                                   0.4em 0.4em 0.4em rgba(0,0,0,0.3);">
+</p>
+</div>
+
+<div class="opcion1radio">
+    <label class="enunciados"><b>Tipo de habitación</b></label>
+<p>
+    <label class="colocar-genero">Económica</label>
+        <input type="radio" required="obligatorio" placeholder="" name="fav_lenguage">
+    <label class="colocar-genero">Calidad-Precio</label>
+        <input type="radio" required="obligatorio" placeholder="" name="fav_lenguage">
+        <label class="colocar-genero">Suite de lujo</label>
+        <input type="radio" required="obligatorio" placeholder="" name="fav_lenguage">
+</p>
+
+<div class="opcion1radio">
+    <label class="enunciados"><b>Noches para la estancia</b></label>
+<p>
+    <label class="colocar-genero">1</label>
+        <input type="radio" required="obligatorio" placeholder="" name="fav_lenguage">
+    <label class="colocar-genero">2</label>
+        <input type="radio" required="obligatorio" placeholder="" name="fav_lenguage">
+</p>
+
+</div>
+<div class="opcion1radio">
+    <label class="enunciados"><b>Personas:</b></label>
+<p>
+    <label class="colocar-genero">1</label>
+        <input type="radio" required="obligatorio" placeholder="" name="fav_lenguage">
+    <label class="colocar-genero">2</label>
+        <input type="radio" required="obligatorio" placeholder="" name="fav_lenguage">
+</p>
+
+</div>
+<div class="opcion1radio">
+    <label class="enunciados"><b>Si ha escogido "2", tipo de camas:</b></label>
+<p>
+    <label class="colocar-genero">Juntas</label>
+        <input type="radio" required="obligatorio" placeholder="" name="fav_lenguage">
+    <label class="colocar-genero">Separadas</label>
+        <input type="radio" required="obligatorio" placeholder="" name="fav_lenguage">
+</p>
+
+</div>
+
+    <label class="enunciados"><b>¿Tiene alguna pregunta? Responderemos cuanto antes:</b></label><br>
+        <textarea class="texto_mensaje" placeholder="Introduce aquí tu mensaje..."></textarea>
+    <label class="enunciados"><b>Mapa con la ubicación del hotel</b>:</label><br>
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-6.113575100898744%2C40.48961865640501%2C-6.111520528793336%2C40.490781379827474&amp;layer=mapnik&amp;marker=40.49020002063445%2C-6.112547814846039" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=40.49020&amp;mlon=-6.11255#map=19/40.49020/-6.11255"></a></small>
+    <button type="submit" onclick="''">Enviar</button>
+</div>
+    </div>
+        </form>
+            </body>
+                </html>
