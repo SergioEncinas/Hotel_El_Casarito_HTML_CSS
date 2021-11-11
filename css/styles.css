@@ -1,10 +1,11 @@
 body {
     padding-bottom: 40px;
 }
-/*HEADER*/
+    /* HEADER */
 
 *{padding: 0; margin: 0; box-sizing: border-box;}
-header {
+
+  header {
 	background: url('https://media.traveler.es/photos/61376362652b2e41f8dce040/master/w_1600%2Cc_limit/185030.jpg');
 	text-align: center;
 	width: 100%;
@@ -15,27 +16,39 @@ header {
 	overflow: hidden;
 	border-radius: 0 0 85% 85% / 30%;
 }
-header .overlay{
+
+  header .overlay {
 	width: 100%;
 	height: 100%;
 	padding: 50px;
-	color: rgb(255, 255, 255);
-    background-image: linear-gradient( 130deg, #00000069 50%, #0000006b 50%);}
+	color: rgb(0, 0, 0);
+    background-image: linear-gradient( 130deg, #00000069 50%, #0000006b 50%);
+}
 
-h1 {
+  .manchanegra {
+    background-color:seashell;
+    width: 100%;
+    margin: auto;
+    border: 1px inset black;
+    border-radius: 85% 85% 85% 85% / 30%;
+    opacity: 0.85;
+    box-shadow: 20px 5px 20px 5px
+}
+
+  h1 {
 	font-family: 'Dancing Script', cursive;
 	font-size: 80px;
 	margin-bottom: 30px;
     text-align: center;
 }
 
-h3, p {
+  h3,  h5 {
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 30px;
-text-align: center;
+    text-align: center;
 }
 
-button {
+  button {
 	border: none;
 	outline: none;
 	padding: 10px 20px;
@@ -45,31 +58,56 @@ button {
 	margin-bottom: 50px;
 	box-shadow: 0 3px 20px 0 #0000003b;
 }
-button:hover{
+
+  button:hover {
 	cursor: pointer;
-}
+    animation-duration: 2s;
+    -webkit-animation-name: tinDownOut;
+    animation-name: tinDownOut;
+  }
+  
+  @-webkit-keyframes tinDownOut {
+    0%, 20%, 40%, 50% {
+      opacity: 1;
+      transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1, 1) translateY(900%);
+    }
+  }
+  @keyframes tinDownOut {
+    0%, 20%, 40%, 50% {
+      opacity: 1;
+      transform: scale(1, 1) translateY(0);
+    }
+    10%, 30% {
+      opacity: 1;
+      transform: scale(1.1, 1.1) translateY(0);
+    }
+  }
 
-
-.titulo1 {
+  .titulo1 {
     width: 90%;
     color: rgb(0, 0, 0);
-    background-color: #ccc;
+    background-color: default;
     border-radius: 50px;
-    border: 7px inset;
+    border: 3px outset;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
     text-align: center;
+    box-shadow: 5px 5px 5px
+
 }
 
-/*HABITACIONES*/
+    /* HABITACIONES */
 
-
-.row {
+  .row {
     padding: 50px
 }
 
-.columna {
+  .columna {
     float: left;
     padding: 30px;
     background-color: white;
@@ -164,53 +202,70 @@ button:hover{
       transform: perspective(800px) rotateX(0deg);
     }
   }
-    .colimg{
+
+  .colimg {
     transition: transform .2s;
 }
 
-  .colimg:hover{
+  .colimg:hover {
     transform: scale(1.1);
-  }
+}
   .row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
   @media screen and (max-width: 600px) {
-    .columna.lado, .column.medio {
+  .columna.lado, .column.medio {
       width: 100%;
     }
-  }
+}
 
+    /* PRECIOS */
+
+  .titulo2 {
+    width: 90%;
+    color: rgb(0, 0, 0);
+    background-color: default;
+    border-radius: 50px;
+    border: 1px outset;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 5px 5px 5px
+}
   p, h1, h2, h3, h4 {
-      text-align: center;
-  }
+    text-align: center;
+}
 
   .tabla1, td, th {
     border: 4px solid rgb(0, 0, 0);
     text-align: center;
-    }
+}
     
-    .tabla1{
+  .tabla1 {
     border-collapse: collapse;
     width: 70%;
     margin: auto;
     margin-top: 5%;
     background-color: whitesmoke;
-    }
+}
     
-    th, td {
+  th, td {
     padding: 15px;
-    }
+}
 
-    .tdd, .thd {
-        border-right: 1px solid black;
-    }
-    .form{
-            transition: transform .2s;
-        }
+  .tdd, .thd {
+    border-right: 1px solid black;
+}
+
+    /* FORMULARIO */
+
+  .form {
+    transition: transform .2s;
+}
         
-          .form:hover{
-            transform: scale(1.05);
-          }
+  .form:hover{
+    transform: scale(1.05);
+}
